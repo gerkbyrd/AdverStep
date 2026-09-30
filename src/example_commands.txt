@@ -1,0 +1,56 @@
+#Adaptive attacks against AdverStep on all evaluation datasets (--vlm1 3: QwenVL victim model, --max_pert 16: l_inf bound of 16/255, --perz 0: training FPR is 0%)
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+#Adaptive attacks against Nearside on all evaluation datasets (--vlm1 3: QwenVL victim model, --max_pert 16: l_inf bound of 16/255, --perz 0: training FPR is 0%)
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+#Adaptive attacks against PIP on all evaluation datasets (--vlm1 3: QwenVL victim model, --max_pert 16: l_inf bound of 16/255, --perz 0: training FPR is 0%)
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+#Adaptive attacks against MirrorCheck on all evaluation datasets (--vlm1 3: QwenVL victim model, --max_pert 16: l_inf bound of 16/255, --perz 0: training FPR is 0%)
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds dsvq_test;
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 2 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds flickr;
+
+#AdverStep for various N: d_gradient_steps = N - 1
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds coco;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 2 --ds nips;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 2 --ds coco;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 3 --ds nips;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 3 --ds coco;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 4 --ds nips;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 4 --ds coco;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 5 --ds nips;
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 10 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 5 --ds coco;
