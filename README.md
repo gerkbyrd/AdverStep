@@ -47,3 +47,9 @@ arguments:
 - start: index of first image to attack (between 0 and 500 for all evaluation sets)
 - stop: index of last image to be attacked plus one (between 1 and 100, and > start)
 - savedir: use --save to specifiy the directory where to store the resulting adversarial images and attack time statistics
+
+
+## TODO
+We will soon add code and example commands for:
+- Additional Baselines
+- Training and tuning the different detectors
