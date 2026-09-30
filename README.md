@@ -2,7 +2,7 @@
 <img width="931" height="266" alt="image" src="https://github.com/user-attachments/assets/88d34216-9e1a-4895-ae2b-b1a9b540ef20" />
 
 
-This repository contains the implementation for the core components of the paper. The code should be run from the src/ folder, an is organized as follows:
+This repository contains the implementation for the core components of the paper. The code should be run from the src/ folder, and is organized as follows:
 
 directories:
 - data/, existing_attacks/, utils/: helper files required to run our implementation
