@@ -44,8 +44,8 @@ arguments:
 - perz: FPR on training data (determines the detection threshold based on the training data, can only be varied for Qwen-VL-3B)
 - max_pert: bound on the L_inf norm in pixels (when npatches=0) or maximum area % to be used by patch attack as a float between 0 and 1 (when npatches > 0)
 - npatches: set to zero for norm-bounded attack; for larger n it is the number of adversarial patches in the image (attack budget is distributed equally across patches)
-- start: index of first image to attack (between 0 and 500 for all evaluation sets)
-- stop: index of last image to be attacked plus one (between 1 and 100, and > start)
+- start: index of first image to attack (between 0 and 499 for all evaluation sets)
+- stop: index of last image to be attacked plus one (between 1 and 499, and > start)
 - savedir: use --save to specifiy the directory where to store the resulting adversarial images and attack time statistics
 
 
