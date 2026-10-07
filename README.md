@@ -27,16 +27,16 @@ secondary files:
 Run adaptive attacks against AdverStep and the baselines on five NIPS2017 images:
 ```
 #AdverStep
-python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips --savedir outputs/
+python attack_nips_ms.py --method gait --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 5 --d_gradient_steps 1 --ds nips --savedir outputs/
 
 #Nearside
-python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips --savedir outputs/
+python attack_nips_ms.py --method ns --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 5 --d_gradient_steps 1 --ds nips --savedir outputs/
 
 #PIP
-python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips --savedir outputs/
+python attack_nips_ms.py --method pip --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 5 --d_gradient_steps 1 --ds nips --savedir outputs/
 
 #MirrorCheck
-python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 1 --d_gradient_steps 1 --ds nips --savedir outputs/
+python attack_nips_ms.py --method mc --n_gradient_steps 1000 --vlm1 3 --perz 0 --max_pert 16 --npatches 0 --start 0 --stop 5 --d_gradient_steps 1 --ds nips --savedir outputs/
 ```
 arguments:
 - n_gradient_steps: maximum adaptive attack iterations
